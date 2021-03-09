@@ -1,7 +1,7 @@
 .AddForm {
     display:flex;
     flex-direction: column;
-     justify-content:space-around; 
+     justify-content:center; 
      width:120vh;
       margin:8vh 10vw;
     border-radius:6px; 
@@ -17,11 +17,20 @@ margin: 3px
 }
 
 .buttonadditem{
-    border: 2px solid red;
-    padding: 20px; 
-    width: 300px;
-    resize: both;
-    overflow: auto;
-    border-radius: 50px;
-    margin: auto;
+    margin: 0 20px 0 35px;
+    width: 16vw;
+    height: 26px;
+    background-color: white;
+    border: 2px solid #308EFD;
+    color:#308EFD;
+    border-radius: 7px;
+    margin: 20px 0 10px;
+    
+   
+}
+
+.buttonadditem:hover{
+     background-color: #4CAF50; /* Green */
+    color: white;
+    border:#4CAF50;
 }

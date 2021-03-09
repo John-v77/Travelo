@@ -52,7 +52,7 @@ function AddItem(props) {
                 <input onChange={handleChangePrice} type="number" name="price" placeholder="This is the price" />
                 <input onChange={handleChangeImage_url} type="text" name="image" placeholder="This is the image" />
                 <input onChange={handleChangeDescription} type="textarea" name="description" placeholder="...add description"/>
-                <button className='buttonadditem'>📬</button>
+                <button className='buttonadditem'><b>Add item</b></button>
             </form>
 
         </>
