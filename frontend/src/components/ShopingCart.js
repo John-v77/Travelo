@@ -20,6 +20,8 @@ function ShopingCart(props) {
     }
 
     return (
+        // <div className='shoppingcartcss'>
+        //     Shopping cart </div>
         <div>
             {showItems()}
         </div>

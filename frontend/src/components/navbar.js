@@ -6,6 +6,7 @@ import actions from '../api'
 import Login from './Login';
 import axios from 'axios';
 
+
 function Navbar(props) {
 
     const [user, setUser] = useState({})

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import actions from '../api'
 import './navbar.css';
+import './AddItem.css'
 
 function AddItem(props) {
 
@@ -46,12 +47,12 @@ function AddItem(props) {
         <>
             <h3>Add an Item</h3>
 
-            <form onSubmit={handleSubmit} className="AddForm" style={{display:'flex', flexDirection:'column', width:"40vh", margin:'8vh 27vw', borderRadius:"6px", border:'2px solid #AAAFAA', backgroundColor:'#B5E2F1', padding:'3vw'}}>
+            <form onSubmit={handleSubmit} className="AddForm">
                 <input onChange={handleChangeItem} type="text" name="item" placeholder="Add an item..." />
                 <input onChange={handleChangePrice} type="number" name="price" placeholder="This is the price" />
                 <input onChange={handleChangeImage_url} type="text" name="image" placeholder="This is the image" />
                 <input onChange={handleChangeDescription} type="textarea" name="description" placeholder="...add description"/>
-                <button>📬</button>
+                <button className='buttonadditem'><b>Add item</b></button>
             </form>
 
         </>
