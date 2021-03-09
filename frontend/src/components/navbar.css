@@ -10,6 +10,8 @@
     background-color: white;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
     display: flex;
+    justify-content: space-around;
+
 }
 
 .nav-buttons{
@@ -38,9 +40,10 @@
 
 .logo{
     /* font-family: 'PT Sans', sans-serif; */
-    margin: 0vw 18vw 0vw 36vw;
+    margin: 0vw 8vw 0vw 26vw;
     font-family: 'Deftone Stylus', arial;
     font-size: 1.50em;
+  
 }
 
 
@@ -128,7 +131,7 @@
   }
 
   .search-css{
-    display:flex;
-    justify-content: flex-end;
-    align-items:center;
+   /* display: flex;
+   justify-content: space-around; */
+   
   }
