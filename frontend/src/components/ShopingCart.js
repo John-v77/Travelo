@@ -9,8 +9,8 @@ function ShopingCart(props) {
     axios.get
 
     return (
-        <div>
-            
+        <div className='shoppingcartcss'>
+            Shopping cart
         </div>
     );
 }
