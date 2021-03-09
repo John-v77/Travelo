@@ -40,6 +40,7 @@ function Navbar(props) {
         {/* /  Nav Bar */}
 
         <div id="Navbar">
+            <div style={{width:'26'}}></div>
             <div class="logo">
                 <h2>WhyNew!</h2>
             </div>
@@ -54,6 +55,13 @@ function Navbar(props) {
                   <i style={{color:'black'}}class="fa fa-search"></i>
                   </button>
             </form>
+            <div>
+            <Link to="/shopingCart">
+              <button style={{width:'3vw', height:'1.2vw', margin:'0 10px'}}>
+                <i class="fa fa-shopping-cart" style={{fontSize:'1.2em'}}></i>
+              </button>
+            </Link>
+            </div>
                 </div>
                     <Login/>
                 </div>

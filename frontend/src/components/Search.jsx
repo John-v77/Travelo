@@ -5,7 +5,7 @@ function Search(props) {
 
     console.log(props.MyItemsZZZZ)
 
-    const showItems = ( ) => {
+    const showItems = () => {
         return(
             props.MyItemsZZZZ.map(eachElement => {
              return(   <div>

@@ -16,7 +16,9 @@ function StoreFrontDesk(props) {
 
    
 
-    const buyItem = () => {}
+    const buyItem = (e) => {
+        // props.ShopingCart()
+    }
     const modifyItem = () => {}
 
     const showItems = () =>{
@@ -78,7 +80,7 @@ function StoreFrontDesk(props) {
     return (
         <>
             <div style={{float:'right'}}>
-                <button  onClick={(e) => sortItems(e)} style={{border:'2px solid #308EFD',backgroundColor:'white', color:"#308EFD", borderRadius:'6px', padding:'2px 15px'}}><b>sort by price</b></button>
+                <button  onClick={(e) => sortItems(e)} className="Sort-btn-AllItems"><b>sort by price</b></button>
             </div>
             <div className="All-items-display">
                 

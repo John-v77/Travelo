@@ -25,3 +25,23 @@
   }
 
   /* .Display-Grid */
+
+
+
+
+  .Sort-btn-AllItems{
+    border:2px solid #308EFD;
+    background-Color:white;
+    color:#308EFD;
+    border-Radius:6px;
+    padding:3px 15px;
+  }
+
+
+  
+  .Sort-btn-AllItems:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: 2px solid #4CAF50;
+  }
+

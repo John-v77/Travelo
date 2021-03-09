@@ -3,6 +3,7 @@
   text-align: center;
   background-color: rgb(255, 255, 255);
   width: 80vw;
+  min-height: 100vh;
   margin: 3vw 10vw 4vw 10vw;
 }
 body {
@@ -56,6 +57,6 @@ body {
 /* DESKTOP VERSION STARTING FROM HERE*/
 @media only screen and (min-width: 600px) {
   body {
-    background-color: lightblue;
+    background-color: rgb(181, 226, 241);
   }
 }
