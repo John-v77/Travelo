@@ -1,15 +1,14 @@
 import { useEffect, useState } from 'react'
-import logo from './logo.svg';
 import './App.css';
 import Home from './components/Home'
 import AddItem from './components/AddItem'
 import StoreFrontDesk from './components/storeFrontDesk'
 import ShopingCart from './components/ShopingCart'
 import NavBar from './components/navbar'
-import AllItems from './components/AllItems'
 import Auth from './components/Auth'
 import Search from './components/Search'
 import Profile from './components/Profile'
+import ItemDetails from './components/ItemDetails'
 import actions from './api'
 import { Switch, Route, Link, useHistory} from 'react-router-dom'
 import TheContext from './TheContext'
@@ -59,6 +58,7 @@ function App() {
         <Route exact path="/profile" render={(props) => <Profile {...props} />} />
         <Route exact path="/search" render={(props) => <Search MyItemsZZZZ={cosas} {...props} />} />
         <Route exact path="/shopingCart" render={(props) => <ShopingCart shoppingCartList={shoppingCart} {...props} />} />
+        <Route exact path="/ItemDetails/:id" render={(props) => <ItemDetails {...props} />} />
       </Switch>
 
     </div>

@@ -1,6 +1,7 @@
 import axios from 'axios'
 
-const baseURL = `http://localhost:5000/api`
+const baseURL = `https://whynew.herokuapp.com/api`
+//http://localhost:5000/api
 const token = localStorage.getItem('token')
 
 const API = axios.create({ baseURL, headers: { Authorization: `Bearer ${token}` } });
@@ -42,6 +43,10 @@ const actions = {
 
     searchItems: async (itemName) => {
         return await axios.get(`${baseURL}/findItem/${itemName}`, resetHead())
+    },
+
+    searchItemById: async (itemId) => {
+        return await axios.get(`${baseURL}/ItemDetails/${itemId}`, resetHead())
     },
 
     //------ is it good??

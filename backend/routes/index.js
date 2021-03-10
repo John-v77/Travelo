@@ -79,9 +79,14 @@ router.get(`/allItems`, async (req, res, next) => {
 
 router.get(`/findItem/:name`, async (req, res, next) => {
     // let query  = {item:`/${req.params.name}/i`}
-    console.log('My request **********', req.params)
+    // console.log('My request **********', req.params)
     let allItems = await Item.find( { 'item' : { '$regex' : req.params.name, '$options' : 'i' } } )
     res.status(200).json(allItems)
+})
+
+
+router.get(`/searchItemById/:id`, async (req, res, next) => {
+  console.log('My request **********', req.params._id)
 })
 
 router.post(`/logMeIn`, async (req, res, next) => {

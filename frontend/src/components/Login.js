@@ -21,8 +21,8 @@ function Login(props) {
   
     return (
              
-            <div style={{display: 'flex'}}>
-                {!user.email ? (<Link to="/auth"><button class="login-btn"><b>Login</b></button></Link>) : (<p style={{color:'grey'}}>{user.email}</p>)}
+            <div>
+                {!user.email ? (<Link to="/auth"><button class="login-btn"><b>Login</b></button></Link>) : (<p style={{color:'grey'}}>{(user.email).slice(0,5)}</p>)}
                     <span>{user.email ? (<Link to="/auth"><button><b>Logout</b></button></Link>)  : <></>}</span>
             </div>
     );
