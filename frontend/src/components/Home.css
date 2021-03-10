@@ -1,10 +1,23 @@
-.Sony {
-  height: 70vh;
-  width: 45vw;
-  margin-left: 18vw;
-  margin-top: 5vw;
+.apple {
+  height: 90vh;
+  width: 80vw;
+  margin-left: 0vw;
+  margin-top: 3vw;
 }
 
-.Apple {
-  margin-right: 5vw;
+.samsung {
+  margin-left: 14vw;
+  margin-top: 0vw;
+}
+
+.macbook {
+  margin-left: -1vw;
+  margin-top: 3vw;
+}
+
+.apple2 {
+  height: 90vh;
+  width: 55vw;
+  margin-left: 12vw;
+  margin-top: 5vw;
 }
