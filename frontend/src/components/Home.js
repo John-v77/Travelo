@@ -14,19 +14,19 @@ function Home(props) {
 
     return (
         <>
-            <h3>Home</h3>
+            <h3>Here are only a few of all the like-new items you can buy/sell/trade on WhyNew!</h3>
             <Slider {...settings}>
       <div >
-        <img className= 'Apple' src = './Images/iphone range.jpg' alt= 'apple'/>
+        <img className= 'apple' src = './Images/iphone range.jpg' alt= 'apple'/>
       </div>
       <div>
-      <img className= 'Android' src = './Images/androidtransp.png' alt= 'android'/>
+      <img className= 'samsung' src = './Images/s21transp.png' alt= 'S21'/>
       </div>
       <div>
-      <img className= 'Macbook' src = './Images/13-inch-macbook-pro-2020-old-mbp-100867680-large.jpg' alt= 'macbook'/>
+      <img className= 'macbook' src = './Images/macbookairwhtbg.png' alt= 'macbook'/>
       </div>
       <div>
-        <h3>4</h3>
+      <img className= 'apple2' src = './Images/iphone transparent.png' alt= 'apple2'/>
       </div>
       <div>
         <h3>5</h3>
