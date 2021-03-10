@@ -17,13 +17,13 @@ function Home(props) {
             <h3>Home</h3>
             <Slider {...settings}>
       <div >
-        <img className= 'Sony' src = './Images/PS history.jpg' alt= 'PS'/>
+        <img className= 'Apple' src = './Images/iphone range.jpg' alt= 'apple'/>
       </div>
       <div>
-      <img className= 'Apple' src = './Images/iphone range.jpg' alt= 'apple'/>
+      <img className= 'Android' src = './Images/androidtransp.png' alt= 'android'/>
       </div>
       <div>
-        <h3>3</h3>
+      <img className= 'Macbook' src = './Images/13-inch-macbook-pro-2020-old-mbp-100867680-large.jpg' alt= 'macbook'/>
       </div>
       <div>
         <h3>4</h3>
