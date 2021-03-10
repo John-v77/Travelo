@@ -5,6 +5,5 @@ const Item = model('Item', new Schema({
     userId: { type: Schema.Types.ObjectId, ref: 'User' },
     image_url: String,
     description: String
-
 }))
 module.exports = Item 
