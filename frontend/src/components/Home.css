@@ -11,13 +11,15 @@
 }
 
 .macbook {
-  margin-left: -1vw;
+  height: 80vh;
+  width: 80vw;
+  margin-left: vw;
   margin-top: 3vw;
 }
 
 .apple2 {
-  height: 90vh;
-  width: 55vw;
-  margin-left: 12vw;
+  height: 70vh;
+  width: 45vw;
+  margin-left: 18vw;
   margin-top: 5vw;
 }
