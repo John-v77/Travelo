@@ -84,6 +84,7 @@
   color: #aaafaa;
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
+  margin-left: 10vw;
 }
 
 .AddForm input:focus {
