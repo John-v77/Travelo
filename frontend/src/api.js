@@ -44,6 +44,10 @@ const actions = {
         return await axios.get(`${baseURL}/findItem/${itemName}`, resetHead())
     },
 
+    searchItemById: async (itemId) => {
+        return await axios.get(`${baseURL}/ItemDetails/${itemId}`, resetHead())
+    },
+
     //------ is it good??
     logIn: async (data) => {
 

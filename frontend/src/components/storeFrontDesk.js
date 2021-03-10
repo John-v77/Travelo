@@ -1,25 +1,50 @@
 import React, {useEffect, useState} from 'react';
+import { Link } from 'react-router-dom'
 import actions from '../api'
 import './Allitems.css'
+
 
 
 function StoreFrontDesk(props) {
 
     const [items, setItems] = useState([])
     const [sortBtn, setSortBtn] = useState(false)
+    const [shoppingCart, setShoppingCart] = useState([  ])
 
+// let valToExport = shoppingCart;
+//  export valToExport
 
-    let dataToRender = actions.getAllItems().then(res => {
+useEffect(() => {
+    actions.getAllItems().then(res => {
                             setItems(res.data)
                         }).catch(console.error)
                         
+                    }, [])
 
-   
-
-    const buyItem = (e) => {
-        // props.ShopingCart()
+ 
+     const addItemToShopping = (eachItem)=> {
+        //   console.log('type of Sh**********',shoppingCart)
+        let newCart = [...shoppingCart]
+            newCart.push(eachItem)
+          setShoppingCart(newCart)
+       
+     }
+           
+     const showShoppingCart = () =>{
+       return shoppingCart.map(each => {
+            return (
+                <div>
+                <div>
+                    {each.item}
+                </div>
+                 <div>
+                 {each.price}
+             </div>
+             </div>
+            )
+        })
     }
-    const modifyItem = () => {}
+
 
     const showItems = () =>{
         
@@ -31,15 +56,15 @@ function StoreFrontDesk(props) {
                         </div>
                         <div>
                             <ul style={{listStyleType:"none"}}>
-                                <li>{eachItem.item}</li>
+                                <li><Link to={`/ItemDetails/${eachItem._id}`}>{eachItem.item}</Link></li>
                                 <li>${eachItem.price}</li>
                                 <li>{eachItem.description}</li>
                             </ul>
                         </div>
                         
                         <div style={{marginBottom:'2vh',display:"flex", justifyContent:'flex-end'}}>
-                            <button onClick={(e) => buyItem(eachItem._id)} >buy</button>
-                            <button onClick={(e) => modifyItem(eachItem._id)} >modify</button>
+                            <button onClick={(e) => addItemToShopping(eachItem)} >buy</button>
+                            {/* <button onClick={(e) => modifyItem(eachItem._id)} >modify</button> */}
                             <button onClick={(e) => deleteItem(eachItem._id)} className="del-Btn-StoreFront">delete</button>
                         </div>
 
@@ -75,7 +100,7 @@ function StoreFrontDesk(props) {
         
     }
 
-     useEffect((dataToRender) => {}, [])
+    
 
     return (
         <>
@@ -99,6 +124,9 @@ function StoreFrontDesk(props) {
 
                 
             </div>
+            {/* <div>
+                {showShoppingCart()}
+            </div> */}
         </>
     );
 }
