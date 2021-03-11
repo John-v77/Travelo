@@ -3,7 +3,7 @@ import actions from '../api'
 import './ItemDetails.css';
 
 function ItemDetails(props) {
-    // console.log(props.match.params.id)
+    console.log(props.match.params.id)
     const [item, setItem] = useState({})
 
     

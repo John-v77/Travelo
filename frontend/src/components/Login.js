@@ -3,27 +3,27 @@ import './navbar.css';
 import {Link, useHistory} from 'react-router-dom'
 import TheContext from '../TheContext'
 import actions from '../api'
+import {useContext} from 'react'
 
 
 function Login(props) {
 
-    const [user, setUser] = useState({})
-
-  useEffect(() => {
-    actions.getUser().then(res => {
-      setUser(res.data)
-    }).catch(console.error)
-  }, [])
-
-  const history = useHistory()
+  const {user, setUser, history} = useContext(TheContext)
+  console.log(user)
+  const logOut = () => {
+    console.log('hello')
+    setUser({})
+    localStorage.clear()
+    history.push('/')
+}
 
   // Return 
   
     return (
              
             <div>
-                {!user.email ? (<Link to="/auth"><button class="login-btn"><b>Login</b></button></Link>) : (<p style={{color:'grey'}}>{(user.email).slice(0,5)}</p>)}
-                    <span>{user.email ? (<Link to="/auth"><button><b>Logout</b></button></Link>)  : <></>}</span>
+                {!user.email ? (<Link to="/auth"><button class="login-btn"><b>Login</b></button></Link>) : ((<p style={{color:'grey'}}>{(user.given_name)}</p>))}
+                    <span>{user.email ? (<button onClick={logOut}><b>Logout</b></button>)  : null}</span>
             </div>
     );
 }

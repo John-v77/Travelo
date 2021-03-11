@@ -34,8 +34,10 @@ function Welcome(props) {
    const {user, setUser, history} = useContext(TheContext)
 
     const logOut = () => {
+        console.log('hello')
         setUser({})
         localStorage.clear()
+        history.push('/')
     }
     return (
         <div>

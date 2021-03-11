@@ -1,17 +1,21 @@
 import { GoogleLogin } from 'react-google-login'
 import actions from '../api'
+import TheContext from '../TheContext';
+import {useContext} from 'react'
 
 console.log(process.env)
 
 const Auth = (props) => {
-
+    const { user, history, setUser } = useContext(TheContext)
     const onResponse = (response) => {
         console.log(response)
         actions
             .logIn(response)
             .then(res => {
                 console.log(res)
-                props.setUser(res.data)
+                setUser(res.data)
+                history.push('/')
+
             })
             .catch(console.error)
     }

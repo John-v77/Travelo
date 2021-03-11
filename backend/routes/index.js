@@ -85,9 +85,15 @@ router.get(`/findItem/:name`, async (req, res, next) => {
 })
 
 
-router.get(`/searchItemById/:id`, async (req, res, next) => {
-  console.log('My request **********', req.params._id)
+
+router.get(`/ItemDetails`, async (req, res, next) => {
+  console.log('My request **********', req.query.itemId)
 })
+
+
+
+
+
 
 router.post(`/logMeIn`, async (req, res, next) => {
 
