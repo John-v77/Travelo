@@ -40,7 +40,7 @@ function Navbar(props) {
       <div id="Navbar">
         <div style={{ width: "26" }}></div>
         <div class="logo">
-          <h2>WhyNew!</h2>
+          <h3>WhyNew!</h3>
         </div>
         <div class="login">
           <div>
@@ -76,13 +76,13 @@ function Navbar(props) {
 
       <div className="nav-buttons">
         <Link to="/">
-          <b>Home</b>
+          <b><u>Home</u></b>
         </Link>
         <Link to="/storeFrontDesk">
-          <b>All Items</b>
+          <b><u>All Items</u></b>
         </Link>
         <Link to="/add-items">
-          <b>Add Item</b>
+          <b><u>Add Item</u></b>
         </Link>
       </div>
     </>

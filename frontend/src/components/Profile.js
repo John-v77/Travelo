@@ -48,7 +48,4 @@ function Welcome(props) {
 }
 
 
-
-
-
 export default Profile;
