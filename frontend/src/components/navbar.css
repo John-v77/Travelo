@@ -36,9 +36,9 @@
 
 .logo {
   /* font-family: 'PT Sans', sans-serif; */
-  margin: 0vw 8vw 0vw 26vw;
+  margin: -2vw 8vw 0vw 26vw;
   font-family: "Deftone Stylus", arial;
-  font-size: 1.5em;
+  font-size: 2.5em;
 }
 
 .login-btn {
