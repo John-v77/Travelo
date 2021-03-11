@@ -26,14 +26,14 @@ function Home(props) {
       <img className= 'macbook' src = './Images/macbookairwhtbg.png' alt= 'macbook'/>
       </div>
       <div>
-      <img className= 'apple2' src = './Images/iphone transparent.png' alt= 'apple2'/>
+      <img className= 'apple2' src = './Images/iphone12transparent.png' alt= 'apple2'/>
       </div>
-      <div>
+      {/* <div>
         <h3>5</h3>
       </div>
       <div>
         <h3>6</h3>
-      </div>
+      </div> */}
     </Slider>
 
             
