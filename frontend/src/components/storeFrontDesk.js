@@ -10,8 +10,6 @@ function StoreFrontDesk(props) {
 
     const [items, setItems] = useState([])
     const [sortBtn, setSortBtn] = useState(false)
-    const [shoppingCart, setShoppingCart] = useState([  ])
-
 // let valToExport = shoppingCart;
 //  export valToExport
 
@@ -25,27 +23,14 @@ useEffect(() => {
  
      const addItemToShopping = (eachItem)=> {
         //   console.log('type of Sh**********',shoppingCart)
-        let newCart = [...shoppingCart]
+        let newCart = [...props.shoppingCart]
             newCart.push(eachItem)
-          setShoppingCart(newCart)
+          props.setShoppingCart(newCart)
+          console.log(props.shoppingCart)
        
      }
            
-     const showShoppingCart = () =>{
-       return shoppingCart.map(each => {
-            return (
-                <div>
-                <div>
-                    {each.item}
-                </div>
-                 <div>
-                 {each.price}
-             </div>
-             </div>
-            )
-        })
-    }
-
+    
 
     const showItems = () =>{
         
@@ -125,9 +110,7 @@ useEffect(() => {
 
                 
             </div>
-            {/* <div>
-                {showShoppingCart()}
-            </div> */}
+           
         </>
     );
 }
