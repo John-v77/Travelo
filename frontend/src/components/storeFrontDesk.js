@@ -21,14 +21,20 @@ useEffect(() => {
                     }, [])
 
  
-     const addItemToShopping = (eachItem)=> {
+     const addItemToShopping = (item)=> {
         //   console.log('type of Sh**********',shoppingCart)
         let newCart = [...props.shoppingCart]
-            newCart.push(eachItem)
+            newCart.push(item)
           props.setShoppingCart(newCart)
           console.log(props.shoppingCart)
        
      }
+
+
+    //  const modifyItem = (itemID) =>{
+    //      actions.modifyItem(itemID)
+        
+    //  }
            
     
 
